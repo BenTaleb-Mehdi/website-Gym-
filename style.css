@@ -1,0 +1,33 @@
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        transition: background-color 0.4s ease;
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px #ff7300;
+        color: transparent;
+      }
+      .glass {
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 115, 0, 0.1);
+      }
+      .dark .glass {
+        background: rgba(15, 23, 42, 0.6);
+      }
+      [x-cloak] {
+        display: none !important;
+      }
+
+      @keyframes bounce-slow {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+      .animate-bounce-slow {
+        animation: bounce-slow 4s infinite ease-in-out;
+      }
